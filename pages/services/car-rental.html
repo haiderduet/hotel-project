@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hotel Admin</title>
+  <!-- plugins:css -->
+  <!-- FAV ICON(BROWSER TAB ICON) -->
+	<link rel="shortcut icon" href="../../plugin/images/fav.png" type="image/x-icon">
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+	<!-- FONTAWESOME ICONS -->
+  <link rel="stylesheet" href="../../plugin/css/font-awesome.min.css">
+	<!-- ALL CSS FILES -->
+	
+	
+	
+  <link href="../../plugin/css/materialize.css" rel="stylesheet">
+  <link href="../../plugin/css/style.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css"> -->
+  <link href="../../plugin/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+	<link href="../../plugin/css/responsive.css" rel="stylesheet">
+  
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="../../css/style.css">
+  
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+    <!-- aside -->
+    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="index.html" class="brand-logo">
+			<img src="../../images/admin.jpg" alt="logo">
+		  </a>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../../index.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                Dashboard
+              </a>
+            </div>
+            <!--  -->
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                Room & Accumodation
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ui-sub-menu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../RoomType.html">
+                      Room Type Entry
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../RoomEntry.html">
+                      Room Entry
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../CheckIn.html">
+                              Check-in
+                            </a>
+                          </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../CheckOut.html">
+                              Check-out
+                            </a>
+                          </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../../GuestEntry.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                Guest Entry
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Reservation Management
+              </a>
+            </div>
+			<div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Customer Management
+              </a>
+            </div>
+            <!-- Services Menu Start -->
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                Services
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="sample-page-submenu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Car rental services
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Catering Services
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Doctor On Call
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Ironing Service
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      airport Transfers
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Parking
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Meeting Facilites
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/services/car-rental.html">
+                      Tours Guide
+                    </a>
+                  </div>
+
+                </nav>
+              </div>
+            </div>
+            <!-- Services Menu End -->
+      
+            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="employee-page-submenu">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                Employee Management
+                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+              </a>
+              <div class="mdc-expansion-panel" id="employee-page-submenu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../EmployeeEntry.html">
+                      Employee Entry
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="#">
+                      Leave Management
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="#">
+                      Performance Management
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/samples/login.html">
+                      Login
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/samples/register.html">
+                      Register
+                    </a>
+                  </div>
+
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item purchase-link">
+              <a href="../../index.html" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                Heptech Engineers
+              </a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:../../partials/_navbar.html -->
+    <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__input">
+            <div class="mdc-text-field">
+              <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="Search anything...">
+            </div>
+          </span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">notifications</i>
+              <span class="dropdown-count">3</span>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
+              <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">email</i>
+                  One unread message
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">group</i>
+                  One event coming up
+                </li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">
+                  <i class="material-icons mdc-theme--primary mr-1">cake</i>
+                  It's Aleena's birthday!
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdc-menu-anchor">
+            <a href="#" class="mdc-toolbar__icon mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">widgets</i>
+            </a>
+          </div>
+          <div class="mdc-menu-anchor mr-1">
+            <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
+              <i class="material-icons">more_vert</i>
+            </a>
+            <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="logout-menu">
+                <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">settings</i>
+                    Settings
+                  </li>
+                  <li class="mdc-list-item" role="menuitem" tabindex="0">
+                    <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
+                    Logout
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- partial -->
+    <div class="page-wrapper mdc-toolbar-fixed-adjust">
+      <main class="content-wrapper">
+        <!-- Start Input Form Haider -->
+        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+          <div class="mdc-card">
+            <section class="mdc-card__primary">
+              <h1 class="mdc-card__title mdc-card__title--large">Rental Informations</h1>
+            </section>
+            <!-- hi -->
+            <div class="db-cent">
+              
+              <div class="db-cent-8">
+                <div class="db-cent-table db-com-table">
+                  <div class="db-title">
+                    <h3><img src="images/icon/dbc5.png" alt=""/> Rent-a-car Booking</h3>
+                  </div>
+                  <div class="book-form inn-com-form db-form">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>Full Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>Phone</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>Mobile</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>City</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="text" class="validate">
+                          <label>Country</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <select>
+                            <option value="" disabled selected>No of adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="1">4</option>
+                          </select>
+                        </div>
+                        <div class="input-field col s6">
+                          <select>
+                            <option value="" disabled selected>No of childrens</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="1">4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input type="text" id="from" name="from">
+                          <label for="from">Arrival Date</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input type="text" id="to" name="to">
+                          <label for="to">Departure Date</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                          <label>Message</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input type="submit" value="submit" class="form-btn"> </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- by -->
+          </div>
+        </div>
+        <!-- End Input Form Haider -->
+        <div class="mdc-layout-grid">
+					<div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+							<div class="mdc-card">
+                <div class="template-demo">
+                  <div class="db-cent-3">
+                    <div class="db-cent-table db-com-table">
+                      <div class="db-title">
+                        <h3><img src="images/icon/dbc5.png" alt=""/> Car Bookings list</h3>
+                      </div>
+                      <table class="bordered responsive-table">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>City</th>
+                            <th>Arrival</th>
+                            <th>Departure</th>
+                            <th>Members</th>
+                            <th>Payment</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>Alvin</td>
+                            <td>+01 4215 3521</td>
+                            <td><span class="db-tab-hi">New york,</span>USA</td>
+                            <td>12may</td>
+                            <td>20may</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>02</td>
+                            <td>Liam</td>
+                            <td>+01 2484 6521</td>
+                            <td><span class="db-tab-hi">Bangalore,</span>India</td>
+                            <td>18apr</td>
+                            <td>24apr</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>03</td>
+                            <td>Logan</td>
+                            <td>+01 6524 6521</td>
+                            <td><span class="db-tab-hi">Los Angeles,</span>USA</td>
+                            <td>05dec</td>
+                            <td>12dec</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-not-success">Pending</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>04</td>
+                            <td>Michael</td>
+                            <td>+01 3652 1425</td>
+                            <td><span class="db-tab-hi">Bristol,</span>UK</td>
+                            <td>14jen</td>
+                            <td>24jen</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-not-success">Pending</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05</td>
+                            <td>Alvin</td>
+                            <td>+01 4215 3521</td>
+                            <td><span class="db-tab-hi">New york,</span>USA</td>
+                            <td>12may</td>
+                            <td>20may</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>06</td>
+                            <td>Alvin</td>
+                            <td>+01 4215 3521</td>
+                            <td><span class="db-tab-hi">New york,</span>USA</td>
+                            <td>12may</td>
+                            <td>20may</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>07</td>
+                            <td>Liam</td>
+                            <td>+01 2484 6521</td>
+                            <td><span class="db-tab-hi">Bangalore,</span>India</td>
+                            <td>18apr</td>
+                            <td>24apr</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>08</td>
+                            <td>Logan</td>
+                            <td>+01 6524 6521</td>
+                            <td><span class="db-tab-hi">Los Angeles,</span>USA</td>
+                            <td>05dec</td>
+                            <td>12dec</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-not-success">Pending</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>09</td>
+                            <td>Michael</td>
+                            <td>+01 3652 1425</td>
+                            <td><span class="db-tab-hi">Bristol,</span>UK</td>
+                            <td>14jen</td>
+                            <td>24jen</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-not-success">Pending</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>Alvin</td>
+                            <td>+01 4215 3521</td>
+                            <td><span class="db-tab-hi">New york,</span>USA</td>
+                            <td>12may</td>
+                            <td>20may</td>
+                            <td>12</td>
+                            <td><a href="#" class="db-success">Success</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="db-pagi">
+                      <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                        </li>
+                        <li class="active"><a href="#!">1</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">2</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">3</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">4</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!">5</a>
+                        </li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+							</div>
+						</div>
+            
+					</div>
+				</div>
+      </main>
+      <!-- partial:../../partials/_footer.html -->
+      <footer>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+              <span class="text-muted">Copyright © 2018 <a class="text-green" href="../../index.html" target="_blank">HepTech Engineers</a>. All rights reserved.</span>
+            </div>
+          
+          </div>
+        </div>
+      </footer>
+      <!-- partial -->
+    </div>
+  </div>
+  <!-- body wrapper -->
+  <!-- plugins:js -->
+  <script src="../../node_modules/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+	<script src="../../js/misc.js"></script>
+	<script src="../../js/material.js"></script>
+	<!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+
+  <!--ALL SCRIPT FILES-->
+	<script src="../../plugin/js/jquery.min.js"></script>
+	<script src="../../plugin/js/jquery-ui.js"></script>
+	<script src="../../plugin/js/angular.min.js"></script>
+	<script src="../../plugin/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../plugin/js/materialize.min.js" type="text/javascript"></script>
+	<script src="../../plugin/js/jquery.mixitup.min.js" type="text/javascript"></script>
+	<script src="../../plugin/js/custom.js"></script>
+</body>
+
+</html>
